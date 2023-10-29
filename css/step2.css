@@ -1,7 +1,19 @@
 .formulario2 {
   transform: scale(0);
 }
-
+.section_step {
+  width: 30%;
+  height: 100%;
+  padding: 20px;
+  background-image: url("../assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
 .efecto_formulario {
   transform: scale(1);
   transition: transform 0.3s;
