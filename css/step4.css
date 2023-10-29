@@ -1,0 +1,110 @@
+.formulario4 {
+  transform: scale(0);
+}
+.efecto_formulario {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.efecto_step {
+  background-color: white;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+.container_summary {
+  width: 100%;
+  display: grid;
+  row-gap: 20px;
+}
+.arcade_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid hsl(229, 24%, 87%);
+}
+.arcade {
+  width: 100%;
+  display: grid;
+  row-gap: 10px;
+}
+.tiempo,
+.mes {
+  font-size: 16px;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+.change {
+  color: hsl(231, 11%, 63%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.change:hover {
+  color: hsl(243, 100%, 62%);
+}
+.precio_arcade {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+.contanier_suma_total {
+  width: 100%;
+  display: grid;
+  row-gap: 20px;
+}
+.cont_Online_service,
+.cont_larger,
+.cont_total,
+.cont_profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cont_Online_service {
+  display: none;
+}
+.cont_larger {
+  display: none;
+}
+.cont_profile {
+  display: none;
+}
+.precio_online,
+.precio_larger,
+.precio_profile {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+.servicio_final,
+.tipo_total {
+  color: hsl(231, 11%, 63%);
+}
+.cont_total {
+  margin-top: 25px;
+}
+.total {
+  color: hsl(243, 100%, 62%);
+  font-weight: 700;
+  font-size: 20px;
+}
+.botones_section4 {
+  margin-top: 40px;
+}
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+  .botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    position: relative;
+  }
+  #button_back3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #button_seguir4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

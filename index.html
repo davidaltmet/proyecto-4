@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/step1.css" />
+    <link rel="stylesheet" href="./css/step2.css" />
+    <link rel="stylesheet" href="./css/step3.css" />
+    <link rel="stylesheet" href="./css/step4.css" />
+    <link rel="stylesheet" href="./css/pasofinal.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="form_container">
+        <section class="section_step">
+          <div class="container_step">
+            <span class="step_num step_num1">1</span>
+            <div class="info_step">
+              <span class="step">Step 1</span>
+              <span class="nom_step">Your Info</span>
+            </div>
+          </div>
+          <div class="container_step">
+            <span class="step_num step_num2">2</span>
+            <div class="info_step">
+              <span class="step">Step 2</span>
+              <span class="nom_step">Select plan</span>
+            </div>
+          </div>
+          <div class="container_step">
+            <span class="step_num step_num3">3</span>
+            <div class="info_step">
+              <span class="step">Step 3</span>
+              <span class="nom_step">Add-ons</span>
+            </div>
+          </div>
+          <div class="container_step">
+            <span class="step_num step_num4">4</span>
+            <div class="info_step">
+              <span class="step">Step 4</span>
+              <span class="nom_step">Summary</span>
+            </div>
+          </div>
+        </section>
+        <section class="formulario formulario1">
+          <div class="title_info">
+            <h1 class="title_form">Personal info</h1>
+            <p class="paragraph_form">
+              Please provide your name, email address, and phone number.
+            </p>
+          </div>
+          <form action="#">
+            <fieldset>
+              <div class="content_label_menj_error">
+                <label for="name" class="label">Name</label>
+                <span class="mensaje_error"> </span>
+                <span class="mensaje_error_name">Invalid name address</span>
+              </div>
+              <input
+                type="text"
+                class="input_text"
+                id="name"
+                placeholder="e.g. Stephen King"
+              />
+            </fieldset>
+            <fieldset>
+              <div class="content_label_menj_error">
+                <label for="name" class="label">Email Address</label>
+                <span class="mensaje_error"></span>
+                <span class="email_error_email">Invalid email address</span>
+              </div>
+              <input
+                type="text"
+                class="input_text"
+                id="email"
+                placeholder="e.g. stephenking@lorem.com"
+              />
+            </fieldset>
+            <fieldset>
+              <div class="content_label_menj_error">
+                <label for="name" class="label">Phone Number</label>
+                <span class="mensaje_error"> </span>
+                <span class="menaje_error_number">Invalide Phone number</span>
+              </div>
+              <input
+                type="text"
+                class="input_text"
+                id="number"
+                placeholder="e.g. +1 234 567 890"
+              />
+            </fieldset>
+            <div class="button botones_section1">
+              <input
+                type="submit"
+                value="Next step"
+                id="button_seguir1"
+                class="button_seguir"
+              />
+            </div>
+          </form>
+        </section>
+        <section class="formulario formulario2">
+          <div class="title_info">
+            <h1 class="title_form">Select your plan</h1>
+            <p class="paragraph_form">
+              You have the option of monthly or yearly billing.
+            </p>
+          </div>
+          <div class="planes_container">
+            <div class="plan plan1">
+              <img src="./assets/images/icon-arcade.svg" />
+              <div class="nom_precio">
+                <span class="nom_plan"> Arcade </span>
+                <span class="precio_plan">$9/mo</span>
+              </div>
+            </div>
+            <div class="plan plan2">
+              <img src="./assets/images/icon-advanced.svg" />
+              <div class="nom_precio">
+                <span class="nom_plan">Advanced</span>
+                <span class="precio_plan">$12/mo</span>
+              </div>
+            </div>
+            <div class="plan plan3">
+              <img src="./assets/images/icon-pro.svg" />
+              <div class="nom_precio">
+                <span class="nom_plan">Pro</span>
+                <span class="precio_plan">$15/mo</span>
+              </div>
+            </div>
+          </div>
+          <div class="content_switch">
+            <span class="monthly">Monthly</span>
+            <div class="switch_button">
+              <input type="checkbox" id="btn-switch" />
+              <label for="btn-switch" class="switch"></label>
+            </div>
+            <span class="yearly">Yearly</span>
+          </div>
+          <div class="botones">
+            <input
+              type="submit"
+              value="Go back"
+              id="button_back1"
+              class="button_back"
+            />
+            <input
+              type="submit"
+              value="Next step"
+              id="button_seguir2"
+              class="button_seguir"
+            />
+          </div>
+        </section>
+        <section class="formulario formulario3">
+          <div class="title_info">
+            <h1 class="title_form">Pick add-ons</h1>
+            <p class="paragraph_form">
+              Add-ons help enhance your gaming experience.
+            </p>
+          </div>
+          <div class="container_complementos">
+            <div class="complemento complemento1">
+              <div class="complemento_title_info_checkbox">
+                <input type="checkbox" class="checkbox checkbox1" />
+                <div class="conatiner_title_info">
+                  <span class="service_title">Online Servce</span>
+                  <span class="service_info">Access to multiplayer games</span>
+                </div>
+              </div>
+              <span class="precio_complemento">+$1/mo</span>
+            </div>
+            <div class="complemento complemento2">
+              <div class="complemento_title_info_checkbox">
+                <input type="checkbox" class="checkbox checkbox2" />
+                <div class="conatiner_title_info">
+                  <span class="service_title">Larger storage</span>
+                  <span class="service_info">Extra 1TB of cloud save</span>
+                </div>
+              </div>
+              <span class="precio_complemento">+$2/mo</span>
+            </div>
+            <div class="complemento complemento3">
+              <div class="complemento_title_info_checkbox">
+                <input type="checkbox" class="checkbox checkbox3" />
+                <div class="conatiner_title_info">
+                  <span class="service_title">Customizable Profile</span>
+                  <span class="service_info">Custom theme on your profile</span>
+                </div>
+              </div>
+              <span class="precio_complemento">+$2/mo</span>
+            </div>
+          </div>
+          <div class="botones botones_section3">
+            <input
+              type="submit"
+              value="Go back"
+              id="button_back2"
+              class="button_back"
+            />
+            <input
+              type="submit"
+              value="Next step"
+              id="button_seguir3"
+              class="button_seguir"
+            />
+          </div>
+        </section>
+        <section class="formulario formulario4">
+          <div class="title_info">
+            <h1 class="title_form">Finishing up</h1>
+            <p class="paragraph_form">
+              Double-check everything looks OK before confirming.
+            </p>
+          </div>
+          <div class="container_summary">
+            <div class="arcade_container">
+              <div class="arcade">
+                <div class="container_tiempo">
+                  <span class="tiempo">Arcade</span>
+                  <spa class="mes">(monthly)</spa>
+                </div>
+                <span class="change">Change</span>
+              </div>
+              <span class="precio_arcade"></span>
+            </div>
+            <div class="contanier_suma_total">
+              <div class="cont_Online_service">
+                <span class="online_servive servicio_final"
+                  >Online service</span
+                >
+                <span class="precios_finales precio_online precio_complemento"
+                  >+$1/mo</span
+                >
+              </div>
+              <div class="cont_larger">
+                <span class="larger_storage servicio_final"
+                  >Larger storage</span
+                >
+                <span class="precios_finales precio_larger precio_complemento"
+                  >+$2/mo</span
+                >
+              </div>
+              <div class="cont_profile">
+                <span class="profile servicio_final">Customizable profile</span>
+                <span class="precios_finales precio_profile precio_complemento"
+                  >+$2/mo</span
+                >
+              </div>
+              <div class="cont_total">
+                <span class="tipo_total">Total (per month)</span>
+                <span class="total">+$9/mo</span>
+              </div>
+            </div>
+          </div>
+          <div class="botones botones_section4">
+            <input
+              type="submit"
+              value="Go back"
+              id="button_back3"
+              class="button_back"
+            />
+            <input
+              type="submit"
+              value="Next step"
+              id="button_seguir4"
+              class="button_seguir"
+            />
+          </div>
+        </section>
+        <section class="formulario formulario5">
+          <div class="contenedor_final">
+            <img src="./assets/images/icon-thank-you.svg" />
+            <h1 class="title">Thank you!</h1>
+            <p class="pragraph">
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free to
+              email us at support@loremgaming.com.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+   
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    Thank you! Thanks for confirming your subscription! We hope you have fun
+    using our platform. If you ever need support, please feel free to email us
+    at support@loremgaming.com. -->

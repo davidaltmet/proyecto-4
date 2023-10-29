@@ -1,0 +1,129 @@
+.formulario {
+  width: 70%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+}
+.efecto_formulario {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+/* .formulario1 {
+  display: none;
+} */
+.title_info {
+  width: 100%;
+  display: grid;
+  row-gap: 10px;
+}
+.title_info .title_form {
+  font-size: 30px;
+  color: hsl(213, 96%, 18%);
+}
+.title_info .paragraph_form {
+  font-size: 16px;
+  color: hsl(231, 11%, 63%);
+}
+form {
+  width: 100%;
+  display: grid;
+  row-gap: 20px;
+}
+form fieldset {
+  border: none;
+  display: grid;
+  row-gap: 5px;
+}
+form fieldset .content_label_menj_error {
+  display: flex;
+  justify-content: space-between;
+}
+form fieldset .label {
+  font-size: 16px;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+form fieldset .mensaje_error {
+  color: hsl(354, 84%, 57%);
+}
+.email_error_email,
+.menaje_error_number,
+.mensaje_error_name {
+  display: none;
+  color: hsl(354, 84%, 57%);
+}
+.input_text {
+  padding: 12px 20px;
+  outline: none;
+  border: 1px solid hsl(206, 94%, 87%);
+  border-radius: 5px;
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  font-size: 15px;
+}
+.input_text:focus {
+  border: 1px solid hsl(213, 96%, 18%);
+}
+.input_text::placeholder {
+  color: hsl(231, 11%, 63%);
+}
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+.button_seguir {
+  padding: 16px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  cursor: pointer;
+}
+.button_seguir:hover {
+  opacity: 0.9;
+}
+.botones_section1 {
+  margin-top: 80px;
+}
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+  .formulario {
+    width: 90%;
+    height: 450px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 10px;
+    box-shadow: 0px 13px 13px -6px hsl(229, 24%, 87%);
+  }
+  .efecto_formulario {
+    transform: scale(1);
+    transition: transform 0.3s;
+  }
+  form fieldset .mensaje_error {
+    font-size: 14px;
+  }
+  .email_error_email,
+  .menaje_error_number,
+  .mensaje_error_name {
+    font-size: 14px;
+  }
+  .input_text {
+    font-weight: 500;
+  }
+  .button_seguir {
+    position: absolute;
+    top: 115%;
+  }
+}

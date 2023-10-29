@@ -1,0 +1,172 @@
+.formulario2 {
+  transform: scale(0);
+}
+
+.efecto_formulario {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.efecto_step {
+  background-color: white;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+.planes_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.plan {
+  display: grid;
+  row-gap: 35px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 7px;
+  width: 30%;
+  padding: 20px 0px 20px 20px;
+  cursor: pointer;
+}
+.efecto_plan {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+.nom_precio {
+  display: grid;
+  row-gap: 5px;
+}
+.nom_precio .nom_plan {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  font-size: 16px;
+}
+.precio_plan {
+  font-size: 14px;
+  color: hsl(228, 100%, 84%);
+  opacity: 0;
+  animation: precios 0.5s forwards;
+}
+@keyframes precios {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.content_switch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.monthly {
+  font-size: 16px;
+  color: hsl(231, 11%, 63%);
+}
+.yearly {
+  font-size: 16px;
+  color: hsl(231, 11%, 63%);
+}
+.efecto_switch_yearly {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+
+.switch_button {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 30px;
+}
+
+.switch::after {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: hsl(217, 100%, 97%);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+#btn-switch:checked ~ .switch::after {
+  left: 30px;
+}
+#btn-switch {
+  display: none;
+}
+.botones {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.button_back {
+  padding: 16px 30px;
+  border-radius: 10px;
+  border: none;
+  color: hsl(231, 11%, 63%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.button_back:hover {
+  color: hsl(213, 96%, 18%);
+}
+
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+  .efecto_formulario {
+    transform: scale(1);
+    transition: transform 0.3s;
+  }
+  .efecto_step {
+    background-color: white;
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+  }
+  .formulario2 {
+    height: 510px;
+  }
+  .planes_container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 0px;
+  }
+  .plan {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+  }
+  .efecto_plan {
+    border: 1px solid hsl(243, 100%, 62%);
+  }
+  .efecto_switch_yearly {
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+  }
+  .botones {
+    justify-content: space-between;
+    position: relative;
+  }
+  #button_back1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #button_seguir2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

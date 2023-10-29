@@ -1,0 +1,28 @@
+.formulario5 {
+  transform: scale(0);
+}
+.efecto_formulario {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.contenedor_final {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.contenedor_final img {
+  margin-bottom: 10px;
+}
+.contenedor_final .title {
+  font-size: 40px;
+  color: hsl(213, 96%, 18%);
+}
+.contenedor_final .pragraph {
+  text-align: center;
+  line-height: 22px;
+  color: hsl(231, 11%, 63%);
+}

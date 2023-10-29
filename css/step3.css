@@ -1,0 +1,104 @@
+.formulario3 {
+  transform: scale(0);
+}
+.efecto_formulario {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.efecto_step {
+  background-color: white;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+.container_complementos {
+  width: 100%;
+  display: grid;
+  row-gap: 20px;
+}
+.complemento {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 7px;
+  cursor: pointer;
+}
+.complemento_title_info_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+.conatiner_title_info {
+  display: grid;
+  row-gap: 5px;
+}
+.service_title {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  font-size: 16px;
+}
+.service_info {
+  color: hsl(231, 11%, 63%);
+  font-size: 14px;
+}
+.precio_complemento {
+  color: hsl(243, 100%, 62%);
+  animation: opacitypreciocomp 0.5s forwards;
+}
+@keyframes opacitypreciocomp {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.botones_section3 {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+  .formulario3 {
+    height: 510px;
+  }
+  .efecto_formulario {
+    transform: scale(1);
+    transition: transform 0.3s;
+  }
+  .efecto_step {
+    background-color: white;
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+  }
+  .service_title {
+    font-size: 15px;
+  }
+  .service_info {
+    font-size: 12px;
+  }
+  .botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    position: relative;
+  }
+  #button_back2 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+  #button_seguir3 {
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+}
