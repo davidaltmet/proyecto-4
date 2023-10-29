@@ -39,3 +39,16 @@
   line-height: 22px;
   color: hsl(231, 11%, 63%);
 }
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+  .section_step {
+    width: 100%;
+    height: 30%;
+    padding: 0px;
+    padding-bottom: 40px;
+    background-image: url("../assets/images/bg-sidebar-mobile.svg");
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+  }
+}
